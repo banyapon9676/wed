@@ -1,158 +1,105 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-
-<head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="style3.js" <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>มหาวิทยาลัยแม่โจ้</title>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    
-
-
-</head>
-
-<body>
-    <h1>
-        <img src="../images/โลโก้แม่โจ้1.png" height="100" width="450" alt="มหาวิทยาลัยแม่โจ้">
-    </h1>
-    <nav>
-        <div class="menu-icon">
-            <span class="fas fa-bars"></span>
-        </div>
-        <div class="logo">
-        </div>
-        <div class="nav-items">
-            <li><a href="#">หลักสูตร</a></li>
-            <li><a href="#">รอบรั้วมหาลัย</a></li>
-            <li><a href="#">สมัครเรียน</a></li>
-            <li><a href="#">เกี่ยวกับมหาลัย</a></li>
-        </div>
-        <div class="search-icon">
-            <span class="fas fa-search"></span>
-        </div>
-        <div class="cancel-icon">
-            <span class="fas fa-times"></span>
-        </div>
-        <form action="#">
-            <input type="search" class="search-data" placeholder="Search" required>
-            <button type="submit" class="fas fa-search"></button>
-        </form>
-    </nav>
-    <div class="content">
-        <header class="space"></header>
-        <div class="space text">
-        </div>
+<div class="container">
+    <div class="row">
+    <div class="col-lg-4 mb-4">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Sunset</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+      </div>
+     </div>
     </div>
-    <script>
-        const menuBtn = document.querySelector(".menu-icon span");
-        const searchBtn = document.querySelector(".search-icon");
-        const cancelBtn = document.querySelector(".cancel-icon");
-        const items = document.querySelector(".nav-items");
-        const form = document.querySelector("form");
-        menuBtn.onclick = () => {
-            items.classList.add("active");
-            menuBtn.classList.add("hide");
-            searchBtn.classList.add("hide");
-            cancelBtn.classList.add("show");
-        }
-        cancelBtn.onclick = () => {
-            items.classList.remove("active");
-            menuBtn.classList.remove("hide");
-            searchBtn.classList.remove("hide");
-            cancelBtn.classList.remove("show");
-            form.classList.remove("active");
-            cancelBtn.style.color = "#ff3d00";
-        }
-        searchBtn.onclick = () => {
-            form.classList.add("active");
-            searchBtn.classList.add("hide");
-            cancelBtn.classList.add("show");
-        }
-    </script>
-    <div class="container">
-        <div class="mySlides fade">
-            <img src="images/a65a97d89b08441f919f3966479b633b.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="images/aa878d2fe1a84cbeaf7233b405d18f27.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="images/b5aaea3378d046f4beb7df2cf7962f46.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="images/b910c6184cf846188c66a0de81f869f2.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="images/ce4bde97ac40463b81b2474301a88adc.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="images/d99bb9527976445389729502042b82d6.jpg" style="width:100%">
-        </div>
-        <div class="mySlides fade">
-            <img src="images/f6f28e86530945b198166086e692757d.jpg" style="width:100%">
-        </div>
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
+  <div class="col-lg-4 mb-4">
+  <div class="card">
+      <img src="https://images.unsplash.com/photo-1516214104703-d870798883c5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Sunset</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+      </div>
+      </div>
     </div>
-    <br>
-
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
+    <div class="col-lg-4 mb-4">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=60" alt="" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">Sunset</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut eum similique repellat a laborum, rerum voluptates ipsam eos quo tempore iusto dolore modi dolorum in pariatur. Incidunt repellendus praesentium quae!</p>
+       <a href="" class="btn btn-outline-success btn-sm">Read More</a>
+        <a href="" class="btn btn-outline-danger btn-sm"><i class="far fa-heart"></i></a>
+      </div>
+     </div>
     </div>
-
-    <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-
-        function showSlides(n) {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-    </script>
-
+  </div>
+</div>
+<div class="section-title">
+        <h2>EVENTS</h2>
+        
+      </div>
     <div class="container">
         <div class="row">
-            <div class="col-sm-6">
-                News Update
-            </div>
-            <div class="col">
-            </div>
-            <div class="col"> </div>
-
-            <div class="col"> </div>
-            <div class="col"> </div>
-            <div class="col"> </div>
-            <div class="col"> </div>
-            <div class="col"> </div>
+        <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=60" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Sunset</h5>
+            <p class="card-text">	
+                คณะบริหารธุรกิจจัดหลักสูตรอบรมและศึกษาดูงาน Startup ด้านการเกษตร</p>
+           <a href="" class="btn btn-outline-success btn-sm">อ่านต่อ</a>
+            
+          </div>
+         </div>
         </div>
-
-
-</body>
-
-</html>
+        
+      
+        <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=60" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Sunset</h5>
+            <p class="card-text">	
+                โครงการยกระดับเศรษฐกิจและเศรษฐกิจสังคมรายตำบลแบบบูรณาการ (1 ตำบล 1 มหาวิทยาลัย)</p>
+           <a href="" class="btn btn-outline-success btn-sm">อ่านต่อ</a>
+            
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
+    <div class="section-title">
+        <h2>EVENTS</h2>
+        
+      </div>
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=60" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Sunset</h5>
+            <p class="card-text">	
+                คณะบริหารธุรกิจจัดหลักสูตรอบรมและศึกษาดูงาน Startup ด้านการเกษตร</p>
+           <a href="" class="btn btn-outline-success btn-sm">อ่านต่อ</a>
+            
+          </div>
+         </div>
+        </div>
+        
+      
+        <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1477862096227-3a1bb3b08330?ixlib=rb-1.2.1&amp;auto=format&amp;fit=crop&amp;w=700&amp;q=60" alt="" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Sunset</h5>
+            <p class="card-text">	
+                โครงการยกระดับเศรษฐกิจและเศรษฐกิจสังคมรายตำบลแบบบูรณาการ (1 ตำบล 1 มหาวิทยาลัย)</p>
+           <a href="" class="btn btn-outline-success btn-sm">อ่านต่อ</a>
+            
+          </div>
+         </div>
+        </div>
+      </div>
+    </div>
