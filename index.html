@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styl.css">
@@ -14,8 +15,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js"
         integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj"
         crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -24,13 +24,16 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="dark-mode.css">
 </head>
 
 <body>
-    <!-- navigation -->
+    <!-- ส่วนบน -->
+    
     <nav class="navbar sticky-top navbar-expand-lg bg-light">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="images/โลโก้แม่โจ้1.png " height="80px" class="logo"
+            <a class="navbar-brand" href="index.html"><img src="images/โลโก้แม่โจ้1.png " height="80px" class="logo"
                     alt="Maejo Logo" /></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,22 +43,26 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto w-100 justify-content-end">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">เกี่ยวกับมหาวิทยาลัย <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="เกี่ยวกับมหาวิทยาลัย.html">เกี่ยวกับมหาวิทยาลัย <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">หน่วยงาน</a>
+                        <a class="nav-link" href="หน่วยงาน.html">หน่วยงาน</a>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">การศึกษา</a>
+                        <a class="nav-link" href="http://www.education.mju.ac.th/">การศึกษา</a>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">วิจัยและบริการทางวิชาการ</a>
+                        <a class="nav-link" href="วิจัยและบริการทางวิชาการ.html">วิจัยและบริการทางวิชาการ</a>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">รอบรั้วมหาลัย</a>
+                        <a class="nav-link" href="รอบรั้วมหาลัย.html">รอบรั้วมหาลัย</a>
                     </li>
                 </ul>
             </div>
+            <div class="custom-control custom-switch">
+                <input type="checkbox" class="custom-control-input" id="darkSwitch">
+                <label class="custom-control-label" for="darkSwitch">🌓</label>
+              </div>
+              <script src="dark-mode-switch.min.js"></script>
         </div>
     </nav>
-    <!-- End navigation -->
 
     <!-- slide img -->
 
@@ -67,25 +74,29 @@
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
             <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"></li>
         </ol>
         <div class="carousel-inner">
+            <div class="carousel-item">
+                <a href="http://www.green.mju.ac.th/" target="_blank"><img  class="d-block w-100" alt="W" src="images/b5aaea3378d046f4beb7df2cf7962f46.jpg"></a>
+            </div>
+            <div class="carousel-item">
+                <a href="https://sdg.mju.ac.th/MainPage.aspx" target="_blank"><img  class="d-block w-100" alt="W" src="images/aa878d2fe1a84cbeaf7233b405d18f27.jpg"></a>
+            </div>
             <div class="carousel-item active">
-                <img src="images/a65a97d89b08441f919f3966479b633b.jpg" class="d-block w-100" alt="W">
+                <a href="https://www.mju.ac.th/main/spo/" target="_blank"><img  class="d-block w-100" alt="W" src="images/a65a97d89b08441f919f3966479b633b.jpg"></a>
             </div>
             <div class="carousel-item">
-                <img src="images/aa878d2fe1a84cbeaf7233b405d18f27.jpg" class="d-block w-100" alt="Ch'en">
+                <a href="https://www.mju.ac.th/main/Core_Value-2555/corevalue2560.html" target="_blank"><img  class="d-block w-100" alt="W" src="images/b910c6184cf846188c66a0de81f869f2.jpg"></a>             
             </div>
             <div class="carousel-item">
-                <img src="images/b5aaea3378d046f4beb7df2cf7962f46.jpg" class="d-block w-100" alt="Skadi">
+                <a href="http://www.education.mju.ac.th/graduate/" target="_blank"><img  class="d-block w-100" alt="W" src="images/ce4bde97ac40463b81b2474301a88adc.jpg"></a>
             </div>
             <div class="carousel-item">
-                <img src="images/b910c6184cf846188c66a0de81f869f2.jpg" class="d-block w-100" alt="">
+                <a href="http://personnel.mju.ac.th/vinai.php" target="_blank"><img  class="d-block w-100" alt="W" src="images/d99bb9527976445389729502042b82d6.jpg"></a>
             </div>
             <div class="carousel-item">
-                <img src="images/ce4bde97ac40463b81b2474301a88adc.jpg" class="d-block w-100" alt="">
-            </div>
-            <div class="carousel-item">
-                <img src="images/d99bb9527976445389729502042b82d6.jpg" class="d-block w-100" alt="">
+                <a href="https://green.mju.ac.th/" target="_blank"><img  class="d-block w-100" alt="W" src="images/f6f28e86530945b198166086e692757d.jpg"></a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
@@ -98,18 +109,16 @@
         </a>
     </div>
 
-    <div>
-        <div class="container">
-
-        </div>
-    </div>
     <!-- ด้านบน-จบ -->
 
     <!-- ตรงกลาง -->
    
 
     <div class="section-title">
-        <h2>MJU LINKS</h2>
+        <h2>MJU LINKS<div class="card-body">
+
+            <b href="" class="btn btn-outline-success btn-sm"> สมัครเข้าเรียน</b>
+        </div></h2>
     </div>
     <div class="container">
         <div class="row">
@@ -126,10 +135,6 @@
                     <div class="card-body">
                         <img src="images/arrow2.gif" alt="">
                         <b href="" class="btn btn-outline-success btn-sm"> บุคลากร</b>
-                    </div>
-                    <div class="card-body">
-                        <img src="images/arrow2.gif" alt="">
-                        <b href="" class="btn btn-outline-success btn-sm"> สมัครเข้าเรียน</b>
                     </div>
                     <div class="card-body">
                         <img src="images/arrow2.gif" alt="">
@@ -335,7 +340,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-3 col-md-5 ng-scope" ng-controller="news-letter" ng-init="init();">
-                        <h4 class="m-b-md">รับข่าวสาร</h4>
+                        <h4 class="m-b-md">รับข่าวสารได้ทาง</h4>
                         <div class="row"></div>
                         <ul class="social-icons">
                             <li><a href="https://www.facebook.com/MaejoUniversity"><img src="images/logo-facebook.png"
