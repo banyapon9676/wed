@@ -85,6 +85,9 @@ h2{
   
 }
 /* หน่วยงาน */
+.row.row.justify-content-md-center{
+  background-color: #b8b8b8;
+}
 .section-title1 h2{
   margin-left: 85px;
   margin-top: 50px;
